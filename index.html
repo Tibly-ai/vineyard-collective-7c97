@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vineyard Collective | Estate Winery & Tasting Room in Sonoma Valley</title>
+<meta name="description" content="Vineyard Collective is an intimate Sonoma Valley estate winery crafting slow-made reds. Book a golden-hour tasting, explore our wines, and taste the vineyard.">
+<link rel="canonical" href="https://vineyard-collective-7c97.sites.tibly.ai/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://vineyard-collective-7c97.sites.tibly.ai/">
+<meta property="og:site_name" content="Vineyard Collective">
+<meta property="og:title" content="Vineyard Collective | Estate Winery & Tasting Room in Sonoma Valley">
+<meta property="og:description" content="Vineyard Collective is an intimate Sonoma Valley estate winery crafting slow-made reds. Book a golden-hour tasting, explore our wines, and taste the vineyard.">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,500&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<style type="text/tailwindcss">
+@theme {
+  --color-brand-50: #F5EFE7;
+  --color-brand-100: #EDE1D3;
+  --color-brand-200: #DEC9AE;
+  --color-brand-300: #C9A87D;
+  --color-brand-400: #A97F52;
+  --color-brand-500: #82573A;
+  --color-brand-600: #5C3820;
+  --color-brand-700: #4A2A18;
+  --color-brand-800: #382012;
+  --color-brand-900: #2C1810;
+
+  --color-accent-50: #FBF6E7;
+  --color-accent-100: #F5EAC2;
+  --color-accent-300: #E3C766;
+  --color-accent-500: #D4AF37;
+  --color-accent-700: #A9871F;
+  --color-accent-900: #6E5714;
+
+  --color-wine: #722F37;
+  --color-surface: #F5EFE7;
+  --color-ink: #3A3A3A;
+
+  --font-display: "Playfair Display", serif;
+  --font-body: "Lora", serif;
+
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+}
+
+@layer components {
+  .btn {
+    @apply inline-block px-6 py-3 rounded-sm bg-accent-500 text-brand-900 font-display tracking-wide uppercase text-sm hover:bg-accent-300 transition-colors duration-200;
+  }
+  .btn-secondary {
+    @apply inline-block px-6 py-3 rounded-sm border border-accent-500 text-accent-500 font-display tracking-wide uppercase text-sm hover:bg-accent-500 hover:text-brand-900 transition-colors duration-200;
+  }
+  .card {
+    @apply bg-surface text-ink rounded-md shadow-md p-6 border border-brand-200;
+  }
+}
+</style>
+</head>
+<body>
+<!-- block:header -->
+<header class="w-full bg-brand-900/95 text-brand-50 backdrop-blur-sm sticky top-0 z-50 border-b border-accent-500/30">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-3">
+    <a href="#" class="font-display italic text-2xl tracking-wide text-accent-500">
+      Vineyard Collective
+    </a>
+    <nav class="w-full sm:w-auto">
+      <ul class="flex flex-wrap justify-center sm:justify-end gap-x-6 gap-y-2 font-body text-sm uppercase tracking-widest">
+        <li><a href="#about" class="hover:text-accent-500 transition-colors duration-200">About</a></li>
+        <li><a href="#wines" class="hover:text-accent-500 transition-colors duration-200">Our Wines</a></li>
+        <li><a href="#visit" class="hover:text-accent-500 transition-colors duration-200">Visit</a></li>
+        <li><a href="#contact" class="hover:text-accent-500 transition-colors duration-200">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!-- /block:header -->
+<!-- block:hero -->
+<section class="relative w-full min-h-[90vh] flex items-center justify-center overflow-hidden" data-block="hero">
+  <img src="https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?q=80&w=2069&auto=format&fit=crop" alt="Golden light over rows of vineyard vines at sunset" class="absolute inset-0 w-full h-full object-cover">
+  <div class="absolute inset-0 bg-gradient-to-b from-brand-900/80 via-brand-900/60 to-brand-900/90"></div>
+  <div class="relative z-10 max-w-3xl mx-auto px-6 text-center py-24">
+    <p class="font-body italic text-accent-300 tracking-widest uppercase text-sm mb-4">Sonoma Valley, Est. 2004</p>
+    <h1 class="font-display text-4xl sm:text-5xl md:text-6xl text-brand-50 leading-tight mb-6">
+      Wine, Slow-Crafted<br class="hidden sm:block"> Among the Vines
+    </h1>
+    <p class="font-body text-brand-100 text-lg leading-relaxed mb-10 max-w-xl mx-auto">
+      An intimate estate winery where every bottle carries the patience of the land, the warmth of golden-hour light, and the hands of a family that has never rushed a harvest.
+    </p>
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+      <a href="#visit" class="btn">Reserve a Tasting</a>
+      <a href="#wines" class="btn-secondary">Explore Our Wines</a>
+    </div>
+  </div>
+</section>
+<!-- /block:hero -->
+<!-- block:about -->
+<section id="about" class="w-full bg-surface py-20 md:py-28" data-block="about">
+  <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+    <div>
+      <img src="https://images.unsplash.com/photo-1568213816046-0ee1c42bd559?q=80&w=1974&auto=format&fit=crop" alt="Winemaker examining grapes in the vineyard" class="w-full h-[26rem] object-cover rounded-lg shadow-lg border border-brand-200">
+    </div>
+    <div>
+      <p class="font-body italic text-wine tracking-widest uppercase text-sm mb-3">Our Story</p>
+      <h2 class="font-display text-3xl sm:text-4xl text-brand-900 mb-6 leading-tight">
+        Three Generations, One Hillside
+      </h2>
+      <p class="font-body text-ink leading-relaxed mb-4">
+        Vineyard Collective began as a single hillside plot and a promise: to let the land speak before the cellar ever does. Today our estate spans twenty-two acres of dry-farmed vines, tended by hand and harvested by instinct rather than the calendar.
+      </p>
+      <p class="font-body text-ink leading-relaxed mb-8">
+        We make small lots of wine the old way — native yeasts, neutral oak, and patience measured in years, not months. The result is wine with a sense of place, poured the way it was meant to be shared: slowly, and among friends.
+      </p>
+      <a href="#wines" class="font-display uppercase tracking-widest text-sm text-wine border-b border-wine hover:text-brand-900 hover:border-brand-900 transition-colors duration-200 pb-1">Meet the Wines &rarr;</a>
+    </div>
+  </div>
+</section>
+<!-- /block:about -->
+<!-- block:wines -->
+<section id="wines" class="w-full bg-brand-900 py-20 md:py-28" data-block="wines">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="text-center mb-14">
+      <p class="font-body italic text-accent-300 tracking-widest uppercase text-sm mb-3">The Collection</p>
+      <h2 class="font-display text-3xl sm:text-4xl text-brand-50">Our Wines</h2>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="card flex flex-col">
+        <img src="https://images.unsplash.com/photo-1553361371-9b22f78e8b1d?q=80&w=1974&auto=format&fit=crop" alt="Bottle of estate Cabernet Sauvignon" class="w-full h-56 object-cover rounded-sm mb-5">
+        <h3 class="font-display text-xl text-brand-900 mb-2">Hillside Reserve Cabernet</h3>
+        <p class="font-body text-sm text-ink leading-relaxed mb-4 flex-1">Dense blackberry and cedar with a long, structured finish. Aged eighteen months in neutral French oak.</p>
+        <p class="font-display text-accent-700 text-lg">$68</p>
+      </div>
+      <div class="card flex flex-col">
+        <img src="https://images.unsplash.com/photo-1510972527921-ce03766a1cf1?q=80&w=1974&auto=format&fit=crop" alt="Bottle of estate Pinot Noir" class="w-full h-56 object-cover rounded-sm mb-5">
+        <h3 class="font-display text-xl text-brand-900 mb-2">Estate Pinot Noir</h3>
+        <p class="font-body text-sm text-ink leading-relaxed mb-4 flex-1">Bright red cherry and wild herb, silky and light on its feet. Our most sought-after bottling.</p>
+        <p class="font-display text-accent-700 text-lg">$52</p>
+      </div>
+      <div class="card flex flex-col">
+        <img src="https://images.unsplash.com/photo-1547595628-c61a29f496f0?q=80&w=1974&auto=format&fit=crop" alt="Bottle of estate Chardonnay" class="w-full h-56 object-cover rounded-sm mb-5">
+        <h3 class="font-display text-xl text-brand-900 mb-2">Golden Hour Chardonnay</h3>
+        <p class="font-body text-sm text-ink leading-relaxed mb-4 flex-1">Barrel-fermented with notes of stone fruit and toasted almond, finished with a mineral edge.</p>
+        <p class="font-display text-accent-700 text-lg">$44</p>
+      </div>
+    </div>
+    <div class="text-center mt-14">
+      <a href="#contact" class="btn">Order a Tasting Box</a>
+    </div>
+  </div>
+</section>
+<!-- /block:wines -->
+<!-- block:social-proof -->
+<section class="w-full bg-surface py-20 md:py-24" data-block="social-proof">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="text-center mb-14">
+      <p class="font-body italic text-wine tracking-widest uppercase text-sm mb-3">In Their Words</p>
+      <h2 class="font-display text-3xl sm:text-4xl text-brand-900">Loved by Guests & Critics Alike</h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <blockquote class="card">
+        <p class="font-body italic text-ink leading-relaxed mb-4">"The most romantic tasting we've had in Sonoma — golden light, gracious hosts, and a Pinot that stopped conversation entirely."</p>
+        <footer class="font-display text-sm text-wine uppercase tracking-wide">Maren & Colin, Guests</footer>
+      </blockquote>
+      <blockquote class="card">
+        <p class="font-body italic text-ink leading-relaxed mb-4">"A hidden gem doing everything the slow, right way. Their Reserve Cabernet is one of the valley's best-kept secrets."</p>
+        <footer class="font-display text-sm text-wine uppercase tracking-wide">Sonoma Valley Table Magazine</footer>
+      </blockquote>
+      <blockquote class="card">
+        <p class="font-body italic text-ink leading-relaxed mb-4">"We've hosted three anniversaries here. The staff remembers your name, and the Chardonnay remembers the sunshine."</p>
+        <footer class="font-display text-sm text-wine uppercase tracking-wide">Priya R., Wine Club Member</footer>
+      </blockquote>
+    </div>
+  </div>
+</section>
+<!-- /block:social-proof -->
+<!-- block:visit -->
+<section id="visit" class="relative w-full py-20 md:py-28 overflow-hidden" data-block="visit">
+  <img src="https://images.unsplash.com/photo-1528823872057-9c018a7a7553?q=80&w=2070&auto=format&fit=crop" alt="Guests enjoying wine at a table overlooking the vineyard" class="absolute inset-0 w-full h-full object-cover">
+  <div class="absolute inset-0 bg-brand-900/85"></div>
+  <div class="relative z-10 max-w-4xl mx-auto px-6 text-center">
+    <p class="font-body italic text-accent-300 tracking-widest uppercase text-sm mb-3">Come See Us</p>
+    <h2 class="font-display text-3xl sm:text-4xl text-brand-50 mb-6">Visit the Estate</h2>
+    <p class="font-body text-brand-100 leading-relaxed mb-10 max-w-2xl mx-auto">
+      Tastings are held Thursday through Monday, by reservation, on our vine-shaded terrace overlooking the valley. Bring a friend, stay for the sunset, and leave with a case of something worth remembering.
+    </p>
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 text-brand-50 mb-10">
+      <div>
+        <h3 class="font-display text-accent-500 uppercase tracking-wide text-sm mb-2">Hours</h3>
+        <p class="font-body text-sm">Thu &ndash; Mon, 11am &ndash; 5pm</p>
+      </div>
+      <div>
+        <h3 class="font-display text-accent-500 uppercase tracking-wide text-sm mb-2">Location</h3>
+        <p class="font-body text-sm">1204 Hillside Vineyard Road<br>Sonoma Valley, CA 95476</p>
+      </div>
+      <div>
+        <h3 class="font-display text-accent-500 uppercase tracking-wide text-sm mb-2">Tastings</h3>
+        <p class="font-body text-sm">$45 per guest, waived with a bottle purchase</p>
+      </div>
+    </div>
+    <a href="#contact" class="btn">Reserve Your Table</a>
+  </div>
+</section>
+<!-- /block:visit -->
+<!-- block:contact -->
+<section id="contact" class="w-full bg-surface py-20 md:py-28" data-block="contact">
+  <div class="max-w-2xl mx-auto px-6">
+    <div class="text-center mb-12">
+      <p class="font-body italic text-wine tracking-widest uppercase text-sm mb-3">Get In Touch</p>
+      <h2 class="font-display text-3xl sm:text-4xl text-brand-900 mb-4">Plan Your Visit</h2>
+      <p class="font-body text-ink leading-relaxed">
+        Have a group, a special occasion, or a question about our wine club? Send us a note and we'll get back to you within one business day.
+      </p>
+    </div>
+    <form method="POST" action="https://api.tibly.ai/api/public/site-forms" class="card space-y-5">
+      <input type="hidden" name="_page" value="/index">
+      <input type="text" name="_gotcha" class="hidden" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <div>
+        <label for="name" class="block font-display text-sm uppercase tracking-wide text-brand-900 mb-2">Name</label>
+        <input type="text" id="name" name="name" required class="w-full rounded-sm border border-brand-200 bg-brand-50 px-4 py-3 font-body text-ink focus:outline-none focus:ring-2 focus:ring-accent-500">
+      </div>
+      <div>
+        <label for="email" class="block font-display text-sm uppercase tracking-wide text-brand-900 mb-2">Email</label>
+        <input type="email" id="email" name="email" required class="w-full rounded-sm border border-brand-200 bg-brand-50 px-4 py-3 font-body text-ink focus:outline-none focus:ring-2 focus:ring-accent-500">
+      </div>
+      <div>
+        <label for="party" class="block font-display text-sm uppercase tracking-wide text-brand-900 mb-2">Party Size</label>
+        <input type="text" id="party" name="party_size" placeholder="e.g. 4 guests" class="w-full rounded-sm border border-brand-200 bg-brand-50 px-4 py-3 font-body text-ink focus:outline-none focus:ring-2 focus:ring-accent-500">
+      </div>
+      <div>
+        <label for="message" class="block font-display text-sm uppercase tracking-wide text-brand-900 mb-2">Message</label>
+        <textarea id="message" name="message" rows="4" required class="w-full rounded-sm border border-brand-200 bg-brand-50 px-4 py-3 font-body text-ink focus:outline-none focus:ring-2 focus:ring-accent-500"></textarea>
+      </div>
+      <button type="submit" class="btn w-full">Send Inquiry</button>
+    </form>
+  </div>
+</section>
+<!-- /block:contact -->
+<!-- block:footer -->
+<footer class="w-full bg-brand-900 text-brand-50 border-t border-accent-500/30">
+  <div class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 sm:grid-cols-3 gap-10">
+    <div>
+      <h2 class="font-display italic text-2xl text-accent-500 mb-3">Vineyard Collective</h2>
+      <p class="font-body text-sm text-brand-100 leading-relaxed">
+        An intimate estate winery devoted to slow-crafted reds and golden-hour tastings among the vines.
+      </p>
+    </div>
+    <div>
+      <h3 class="font-display text-lg text-accent-500 mb-3 uppercase tracking-wide">Visit Us</h3>
+      <ul class="font-body text-sm text-brand-100 space-y-2">
+        <li>1204 Hillside Vineyard Road</li>
+        <li>Sonoma Valley, CA 95476</li>
+        <li>(555) 217-4890</li>
+        <li>hello@vineyardcollective.com</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="font-display text-lg text-accent-500 mb-3 uppercase tracking-wide">Explore</h3>
+      <ul class="font-body text-sm space-y-2">
+        <li><a href="#about" class="hover:text-accent-500 transition-colors duration-200">About</a></li>
+        <li><a href="#wines" class="hover:text-accent-500 transition-colors duration-200">Our Wines</a></li>
+        <li><a href="#visit" class="hover:text-accent-500 transition-colors duration-200">Visit</a></li>
+        <li><a href="#contact" class="hover:text-accent-500 transition-colors duration-200">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-accent-500/20 py-5 text-center font-body text-xs text-brand-200">
+    &copy; 2024 Vineyard Collective. All rights reserved.
+  </div>
+</footer>
+<!-- /block:footer -->
+  <script async src="https://api.tibly.ai/widget/v1.js"></script>
+</body>
+</html>
