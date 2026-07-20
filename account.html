@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Member Login — Vineyard Collective</title>
+<meta name="description" content="A page where wine club members can sign in with their email to access their member area. Include a simple passwordless email sign-in and a welcome message ">
+<link rel="canonical" href="https://winecolltest.com/account">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://winecolltest.com/account">
+<meta property="og:site_name" content="Vineyard Collective">
+<meta property="og:title" content="Member Login — Vineyard Collective">
+<meta property="og:description" content="A page where wine club members can sign in with their email to access their member area. Include a simple passwordless email sign-in and a welcome message">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,500&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<style type="text/tailwindcss">
+@theme {
+  --color-brand-50: #F5EFE7;
+  --color-brand-100: #EDE1D3;
+  --color-brand-200: #DEC9AE;
+  --color-brand-300: #C9A87D;
+  --color-brand-400: #A97F52;
+  --color-brand-500: #82573A;
+  --color-brand-600: #5C3820;
+  --color-brand-700: #4A2A18;
+  --color-brand-800: #382012;
+  --color-brand-900: #2C1810;
+
+  --color-accent-50: #FBF6E7;
+  --color-accent-100: #F5EAC2;
+  --color-accent-300: #E3C766;
+  --color-accent-500: #D4AF37;
+  --color-accent-700: #A9871F;
+  --color-accent-900: #6E5714;
+
+  --color-wine: #722F37;
+  --color-surface: #F5EFE7;
+  --color-ink: #3A3A3A;
+
+  --font-display: "Playfair Display", serif;
+  --font-body: "Lora", serif;
+
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+}
+
+@layer components {
+  .btn {
+    @apply inline-block px-6 py-3 rounded-sm bg-accent-500 text-brand-900 font-display tracking-wide uppercase text-sm hover:bg-accent-300 transition-colors duration-200;
+  }
+  .btn-secondary {
+    @apply inline-block px-6 py-3 rounded-sm border border-accent-500 text-accent-500 font-display tracking-wide uppercase text-sm hover:bg-accent-500 hover:text-brand-900 transition-colors duration-200;
+  }
+  .card {
+    @apply bg-surface text-ink rounded-md shadow-md p-6 border border-brand-200;
+  }
+}
+</style>
+</head>
+<body>
+<!-- block:header -->
+<header class="w-full bg-brand-900/95 text-brand-50 backdrop-blur-sm sticky top-0 z-50 border-b border-accent-500/30">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-3">
+    <a href="#" class="font-display italic text-2xl tracking-wide text-accent-500">
+      Vineyard Collective
+    </a>
+    <nav class="w-full sm:w-auto">
+      <ul class="flex flex-wrap justify-center sm:justify-end gap-x-6 gap-y-2 font-body text-sm uppercase tracking-widest">
+        <li><a href="#about" class="hover:text-accent-500 transition-colors duration-200">About</a></li>
+        <li><a href="#wines" class="hover:text-accent-500 transition-colors duration-200">Our Wines</a></li>
+        <li><a href="#visit" class="hover:text-accent-500 transition-colors duration-200">Visit</a></li>
+        <li><a href="#contact" class="hover:text-accent-500 transition-colors duration-200">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!-- /block:header -->
+<!-- block:app -->
+<script type="importmap">
+{"imports":{
+"react":"https://esm.sh/react@18.3.1",
+"react/jsx-runtime":"https://esm.sh/react@18.3.1/jsx-runtime",
+"react-dom/client":"https://esm.sh/react-dom@18.3.1/client",
+"@neondatabase/auth":"https://esm.sh/@neondatabase/auth",
+"@neondatabase/postgrest-js":"https://esm.sh/@neondatabase/postgrest-js"
+}}
+</script>
+<section class="section app-section" data-block="app">
+  <div id="tibly-app-root"></div>
+</section>
+<script type="module" src="/assets/account.js"></script>
+<!-- /block:app -->
+<!-- block:footer -->
+<footer class="w-full bg-brand-900 text-brand-50 border-t border-accent-500/30">
+  <div class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 sm:grid-cols-3 gap-10">
+    <div>
+      <h2 class="font-display italic text-2xl text-accent-500 mb-3">Vineyard Collective</h2>
+      <p class="font-body text-sm text-brand-100 leading-relaxed">
+        An intimate estate winery devoted to slow-crafted reds and golden-hour tastings among the vines.
+      </p>
+    </div>
+    <div>
+      <h3 class="font-display text-lg text-accent-500 mb-3 uppercase tracking-wide">Visit Us</h3>
+      <ul class="font-body text-sm text-brand-100 space-y-2">
+        <li>1204 Hillside Vineyard Road</li>
+        <li>Sonoma Valley, CA 95476</li>
+        <li>(555) 217-4890</li>
+        <li>hello@vineyardcollective.com</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="font-display text-lg text-accent-500 mb-3 uppercase tracking-wide">Explore</h3>
+      <ul class="font-body text-sm space-y-2">
+        <li><a href="#about" class="hover:text-accent-500 transition-colors duration-200">About</a></li>
+        <li><a href="#wines" class="hover:text-accent-500 transition-colors duration-200">Our Wines</a></li>
+        <li><a href="#visit" class="hover:text-accent-500 transition-colors duration-200">Visit</a></li>
+        <li><a href="#contact" class="hover:text-accent-500 transition-colors duration-200">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="border-t border-accent-500/20 py-5 text-center font-body text-xs text-brand-200">
+    &copy; 2024 Vineyard Collective. All rights reserved.
+  </div>
+</footer>
+<!-- /block:footer -->
+  <script async src="https://api.tibly.ai/widget/v1.js"></script>
+</body>
+</html>
